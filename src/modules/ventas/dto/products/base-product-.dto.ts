@@ -18,7 +18,7 @@ export class BaseProductDto{
     @IsString(IsStringValidatorOptions())
     readonly description: string;
 
-   
+    @IsNotEmpty(IsNotEmptyValidationOptions())
     @ArrayNotEmpty(IsNotEmptyValidationOptions())
      readonly image: string[];
      
