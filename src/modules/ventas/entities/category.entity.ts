@@ -1,6 +1,6 @@
-import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn, } from "typeorm";
+import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
-@Entity('products',{schema:'ventas'} )
+@Entity('categories',{schema:'ventas'} )
 
 
 export class ProductEntity{
@@ -41,12 +41,6 @@ export class ProductEntity{
 
     title:string;
 
-    @Column('number',{
-        name:'price',
-        comment: 'precio del producto con dos decimales',
-    })
-
-    price:number;
 
     @Column('varchar',{
         name:'description',

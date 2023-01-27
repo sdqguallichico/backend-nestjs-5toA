@@ -16,6 +16,25 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "@ventas/entities": [
+      "./src/modules/ventas/entities"
+    ],
+    "@ventas/providers": [
+      "./src/modules/ventas/providers"
+    ],
+    "@ventas/controllers": [
+      "./src/modules/ventas/controllers"
+    ],
+    "@ventas/services": [
+      "./src/modules/ventas/services"
+    ],
+    "@ventas/dto": [
+      "./src/modules/ventas/dto"
+    ],
+    "@ventas/modules": [
+      "./src/modules/ventas"
+    ],
+    
   }
 }
