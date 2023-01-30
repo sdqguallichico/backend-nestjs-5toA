@@ -1,4 +1,6 @@
 import { DataSourceEnum, RepositoryEnum } from '@shared/enums';
+import { CategoryEntity } from '../entities/category.entity';
+import { ProductEntity } from '../entities/product.entity';
 import { RequirementRequestEntity } from '../entities/requirement-request.entity';
 
 export const ventasProviders = [

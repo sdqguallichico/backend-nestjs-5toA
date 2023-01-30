@@ -1,9 +1,10 @@
-import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { ProductEntity } from "./product.entity";
 
 @Entity('categories',{schema:'ventas'} )
 
 
-export class ProductEntity{
+export class CategoryEntity{
     @PrimaryGeneratedColumn('venta')
     id:string;
 
@@ -29,8 +30,8 @@ export class ProductEntity{
     deleteAt:Date;
 
     //relaciones
-    @ManyToOne(() => CategoryEntity, (category) => category.product)
-    category: CategoryEntity;
+    @OneToMany(() => ProductEntity, (product) => product.category)
+    product: ProductEntity[];
 
 
     @Column('varchar',{

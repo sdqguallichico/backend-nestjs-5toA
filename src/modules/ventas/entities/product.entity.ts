@@ -1,4 +1,5 @@
 import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn, } from "typeorm";
+import { CategoryEntity } from "./category.entity";
 
 @Entity('products',{schema:'ventas'} )
 
